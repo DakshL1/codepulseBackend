@@ -12,7 +12,7 @@ app.use(express.json());
 app.use('/api/judge0', judgeZeroIM);
 
 app.use('/api/judge0-GM', judgeZeroGM);
-const SOCKET_PORT = 3000;
+const SOCKET_PORT = process.env.PORT;
 
 const rooms = {};
 let gameRoomId="";
